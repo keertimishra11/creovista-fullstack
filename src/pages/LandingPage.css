@@ -1,0 +1,269 @@
+/*
+   GLOBAL
+ */
+.landing-container {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* 
+   HERO SECTION
+*/
+.hero {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4b4bf9, #6c63ff);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+  opacity: 0.9;
+}
+
+/* ===============================
+   SECTION TITLE
+================================ */
+.section-title {
+  font-size: 32px;
+  text-align: center;
+  margin: 60px 0 30px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* 
+   PROJECT GRID
+*/
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 40px;
+}
+
+/* PROJECT CARD */
+.project-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+.project-btn {
+  background: #4b4bf9;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.project-btn:hover {
+  background: #3737d4;
+}
+
+/* 
+   CLIENT GRID
+ */
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 40px 50px;
+}
+
+/* CLIENT CARD */
+.client-card {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.client-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.client-img {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #4b4bf9;
+  margin-bottom: 15px;
+}
+
+.client-feedback {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.client-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+}
+
+.client-role {
+  font-size: 14px;
+  color: #555;
+}
+
+/* 
+   CONTACT SECTION
+*/
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 60px auto;
+  padding: 40px;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-left {
+  width: 40%;
+}
+
+.contact-left h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-left p {
+  color: #555;
+}
+
+.contact-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #4b4bf9;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #3636d8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .contact-left,
+  .contact-form {
+    width: 100%;
+  }
+}
+/* ===============================
+   NEWSLETTER SECTION
+================================ */
+.newsletter {
+  margin-top: 60px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.newsletter h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.newsletter input {
+  padding: 12px 20px;
+  width: 260px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.newsletter input:focus {
+  border-color: #4b4bf9;
+}
+
+.newsletter button {
+  padding: 12px 20px;
+  background: #4b4bf9;
+  border: none;
+  color: white;
+  margin-left: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.newsletter button:hover {
+  background: #3737d4;
+}
