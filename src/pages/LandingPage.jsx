@@ -3,7 +3,9 @@ import axios from "axios";
 import Navbar from "../components/Navbar";
 import "./LandingPage.css";
 
-const API = "http://localhost:5000";
+ const API = "https://creovista-fullstack.onrender.com";
+
+
 
 function LandingPage() {
   const [projects, setProjects] = useState([]);
@@ -75,7 +77,8 @@ function LandingPage() {
       <div className="project-grid">
         {projects.map((p) => (
           <div key={p._id} className="project-card">
-            <img src={`http://localhost:5000/${p.image}`} alt="" className="project-img" />
+          <img src={`http://localhost:5000/${p.image}`} alt="" className="project-img" />
+
             <h3>{p.name}</h3>
             <p>{p.description}</p>
             <button className="project-btn">Read More</button>
@@ -88,7 +91,8 @@ function LandingPage() {
       <div className="client-grid">
         {clients.map((c) => (
           <div key={c._id} className="client-card">
-            <img src={`http://localhost:5000/${c.image}`} alt="" className="client-img" />
+           <img src={`http://localhost:5000/${c.image}`} alt="" className="client-img" />
+
             <p className="client-feedback">“{c.description}”</p>
             <h3 className="client-name">{c.name}</h3>
             <h4 className="client-role">{c.designation}</h4>
